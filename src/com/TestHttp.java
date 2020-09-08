@@ -22,12 +22,12 @@ public class TestHttp {
     public static void main(String[] args) {
         for (int i = 0; i < 1; i++) {
             // if (i % 3 == 0) {
-            String key = "<xml><ToUserName><![CDATA[gh_0c745d932b25]]></ToUserName><FromUserName><![CDATA[o4bxdw5iysEPibi-xv1Wg8XbASMg]]></FromUserName><CreateTime>134883186" + i + "</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[4月20号7点50分提醒我去抢杭州消费券：" + i + "]]></Content><MsgId>1234567890123456" + i + "</MsgId></xml>";
-            String sr = TestHttp.sendPost("http://weixinnotification.cn:8080/weixin/checkWxToken", key);
+            String key = "<xml><ToUserName><![CDATA[gh_0c745d932b25]]></ToUserName><FromUserName><![CDATA[o4bxdw04mkiupM9awqiZYRyfPvKQ]]></FromUserName><CreateTime>134883186" + i + "</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[6月14号20点50分提醒我去抢杭州消费券：" + i + "]]></Content><MsgId>1234567890123456" + i + "</MsgId></xml>";
+            String sr = TestHttp.sendPost("http://weixinnotification.cn:80/weixin/checkWxToken", key);
             //String sr = TestHttp.sendPost("http://192.168.1.5:8080/checkWxToken", key);
             System.out.println(sr);
-            String key1 = "<xml><ToUserName><![CDATA[gh_0c745d932b25]]></ToUserName><FromUserName><![CDATA[o4bxdw5iysEPibi-xv1Wg8XbASMg]]></FromUserName><CreateTime>1348831860" + i + "</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[1]]></Content><MsgId>1234567890123456" + i + "</MsgId></xml>";
-            String sr1 = TestHttp.sendPost("http://weixinnotification.cn:8080/weixin/checkWxToken", key1);
+            String key1 = "<xml><ToUserName><![CDATA[gh_0c745d932b25]]></ToUserName><FromUserName><![CDATA[o4bxdw04mkiupM9awqiZYRyfPvKQ]]></FromUserName><CreateTime>1348831860" + i + "</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[1]]></Content><MsgId>1234567890123456" + i + "</MsgId></xml>";
+            String sr1 = TestHttp.sendPost("http://weixinnotification.cn:80/weixin/checkWxToken", key1);
             //String sr1 = TestHttp.sendPost("http://192.168.1.5:8080/checkWxToken", key1);
             System.out.println(sr1);
             try {
